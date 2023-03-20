@@ -1,6 +1,9 @@
 {
   "name": "crud-frontend",
   "version": "0.1.0",
+  "engines": {
+    "node": "17.3.0"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

@@ -1,11 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import {
-  AiFillEdit,
-  AiOutlineDelete,
-  AiOutlineEdit,
-  AiOutlineHome,
-} from "react-icons/ai";
+import { AiOutlineDelete, AiOutlineEdit, AiOutlineHome } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
 import { SPRING_URL } from "../tools/restApi";
 
@@ -82,13 +77,14 @@ const ViewUser = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    type="button"
                     onClick={() => deleteUser(user.id)}
-                    href="/"
+                    to={`/`}
                     className="flex items-center justify-center py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
                     <AiOutlineDelete className="pr-1 text-xl" />
                     Delete
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
