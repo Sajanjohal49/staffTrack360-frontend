@@ -1,0 +1,13 @@
+<svg class="w-full h-full" viewBox="0 0 400 400">
+  <defs>
+    <pattern
+      id="bg_pattern"
+      width="100"
+      height="100"
+      patternUnits="userSpaceOnUse">
+      <circle cx="50.5" cy="50.5" r="10" fill="#797bb0" stroke="none"></circle>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="#0e0e10"></rect>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#bg_pattern)"></rect>
+</svg>;
