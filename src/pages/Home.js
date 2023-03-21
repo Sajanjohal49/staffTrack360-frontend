@@ -73,7 +73,7 @@ const Home = () => {
                     type="button"
                     className="relative inline-flex items-center justify-center p-0.5   mb-2 md:mb-0 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-600 to-blue-500 group-hover:from-orange-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative flex items-center justify-center px-2.5 py-2 transition-all duration-75 ease-in bg-white rounded-md dark:bg-gray-900 group-hover:bg-opacity-0">
-                      <CiViewTimeline className="mr-1 text-xl " />
+                      <CiViewTimeline className="mr-1 text-xl text-green-800 dark:text-green-400 group-hover:text-white" />
                       <p>View</p>
                     </span>
                   </Link>
@@ -82,7 +82,7 @@ const Home = () => {
                     to={`/editUser/${user.id}`}
                     className="relative inline-flex items-center justify-center p-0.5   mb-2 md:mb-0 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative flex items-center justify-center px-2.5 py-2 transition-all duration-75 ease-in bg-white rounded-md dark:bg-gray-900 group-hover:bg-opacity-0">
-                      <AiOutlineEdit className="mr-1 text-xl " />
+                      <AiOutlineEdit className="mr-1 text-xl text-purple-500 group-hover:text-white" />
                       <p>Edit</p>
                     </span>
                   </Link>
@@ -91,8 +91,8 @@ const Home = () => {
                     onClick={() => deleteUser(user.id)}
                     className="relative inline-flex items-center justify-center p-0.5   mb-2 md:mb-0 mr-2 overflow-hidden text-sm font-medium text-red-600 rounded-lg group bg-gradient-to-br from-red-600 to-red-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative flex items-center justify-center px-2.5 py-2 transition-all duration-75 ease-in bg-white rounded-md dark:bg-gray-900 group-hover:bg-opacity-0">
-                      <AiOutlineDelete className="mr-1 text-xl text-red-600 group-hover:text-white " />
-                      <p>Delete</p>
+                      <AiOutlineDelete className="mr-1 text-xl text-red-500 group-hover:text-white " />
+                      <p className="">Delete</p>
                     </span>
                   </button>
                 </th>
