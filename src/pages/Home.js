@@ -3,11 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SPRING_URL } from "../tools/restApi";
 import { CiViewTimeline } from "react-icons/ci";
-import {
-  AiOutlineDelete,
-  AiOutlineEdit,
-  AiOutlineFundView,
-} from "react-icons/ai";
+import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
