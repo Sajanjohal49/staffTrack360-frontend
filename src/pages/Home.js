@@ -3,7 +3,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SPRING_URL } from "../tools/restApi";
 import { CiViewTimeline } from "react-icons/ci";
-import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
+import {
+  AiOutlineDelete,
+  AiOutlineEdit,
+  AiOutlineFundView,
+} from "react-icons/ai";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -67,12 +71,13 @@ const Home = () => {
                   <Link
                     to={`/viewUser/${user.id}`}
                     type="button"
-                    className="items-center px-2.5  mb-2 mr-2 font-medium text-white rounded-lg md:mb-0 m bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                    <span className="relative flex items-center justify-center py-2 text-center ">
+                    className="relative inline-flex items-center justify-center p-0.5   mb-2 md:mb-0 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-600 to-blue-500 group-hover:from-orange-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <span className="relative flex items-center justify-center px-2.5 py-2 transition-all duration-75 ease-in bg-white rounded-md dark:bg-gray-900 group-hover:bg-opacity-0">
                       <CiViewTimeline className="mr-1 text-xl " />
-                      <p className="pt-0.5 ">View</p>
+                      <p>View</p>
                     </span>
                   </Link>
+
                   <Link
                     to={`/editUser/${user.id}`}
                     className="relative inline-flex items-center justify-center p-0.5   mb-2 md:mb-0 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
