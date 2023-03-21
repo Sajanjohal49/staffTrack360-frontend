@@ -89,9 +89,11 @@ const Home = () => {
                   <button
                     type="button"
                     onClick={() => deleteUser(user.id)}
-                    className="flex items-center justify-center px-1.5 py-2.5 mb-2 mr-2 text-sm font-medium text-white bg-red-700 rounded-lg  focus:outline-none md:mb-0 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
-                    <AiOutlineDelete className="mr-0.5 text-xl " />
-                    <p>Delete</p>
+                    className="relative inline-flex items-center justify-center p-0.5   mb-2 md:mb-0 mr-2 overflow-hidden text-sm font-medium text-red-600 rounded-lg group bg-gradient-to-br from-red-600 to-red-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <span className="relative flex items-center justify-center px-2.5 py-2 transition-all duration-75 ease-in bg-white rounded-md dark:bg-gray-900 group-hover:bg-opacity-0">
+                      <AiOutlineDelete className="mr-1 text-xl text-red-600 group-hover:text-white " />
+                      <p>Delete</p>
+                    </span>
                   </button>
                 </th>
               </tr>
