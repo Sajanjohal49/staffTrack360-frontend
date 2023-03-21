@@ -12,7 +12,7 @@ const Navbar = () => {
             <AiOutlineTeam className="mr-3 text-4xl text-blue-700 dark:text-blue-500 hover:text-blue-600" />
 
             <span className="self-center text-xl font-light whitespace-nowrap dark:text-white">
-              Staff Genie{" "}
+              Staff Track360{" "}
             </span>
           </Link>
           <div className="flex md:order-2">
